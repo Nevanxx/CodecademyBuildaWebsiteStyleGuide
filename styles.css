@@ -1,0 +1,110 @@
+.body {
+    background-image: url("Resources/Images/background.jpg");
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap; 
+}
+
+
+#header {
+    background-color: rgb(14, 176, 212);
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    font-size: 50px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin: 20px auto;
+    width: 90%; 
+    position: relative; 
+}
+
+.colorscontainer {
+    border: 3px solid rgb(255, 254, 254);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px auto;
+    width: 80%; 
+    position: relative;
+}
+
+.colorbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.colorbox h3 {
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cyan { background-color: rgb(191, 211, 240); }
+#greenery { background-color: rgb(89, 180, 139); }
+#black { background-color: black; color: white; }
+#white { background-color: white; color: black; }
+
+#fonts, #textstyles {
+    border: 3px solid rgb(255, 254, 254);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px auto;
+    width: 80%; 
+    position: relative; 
+}
+
+
+.font-sample p {
+    font-family: 'Times New Roman', serif;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#italic {
+    font-style: italic;
+}
+
+#underline {
+    text-decoration: underline;
+}
+
+#mainheading {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'work sans';
+}
+
+#subheading {
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'space mono';
+}
+
+#paragraph {
+    font-weight: 300;
+    font-size:  18px;
+    font-family: 'Times New Roman';
+}
+
+@media (max-width: 768px) {
+    .colorbox {
+        grid-template-columns: 1fr; 
+    }
+
+    #header, .colorscontainer, #fonts, #textstyles {
+        width: 100%; 
+        margin: 10px 0;
+    }
+}
